@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 const AllResumes = () => {
   const [resumes, setResumes] = useState([]);
-
   useEffect(() => {
     fetch("http://localhost:8000/api/resume")
       .then((res) => res.json())
