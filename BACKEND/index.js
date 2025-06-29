@@ -13,8 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-const resumeRoutes = require("../BACKEND/routes/resumeRoutes");
-const aiSuggest = require("../BACKEND/routes/aiSuggest");
+const aiSuggest = require("./routes/aiSuggest"); // adjust path
+const resumeRoutes = require("./routes/resumeRoutes"); // adjust path
 
 app.use("/api/ai-suggest", aiSuggest);
 app.use("/api/resume", resumeRoutes);
